@@ -8,7 +8,9 @@ header{
     font: bold 24px Futura, sans-serif;
 }
 
-article{
+
+
+section{
     padding: 10px 20px 10px;
     margin: 5px;
     background-color: burlywood;
@@ -16,7 +18,7 @@ article{
     font: 18px Times New Roman, serif;
 }
 
-section{
+article{
     padding: 10px 20px 10px;
     margin: 5px;
     background-color: burlywood;
