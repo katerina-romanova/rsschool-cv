@@ -1,4 +1,4 @@
-body {
+body{
     background-color:coral;
     margin:  20px 300px;
     }
@@ -9,6 +9,14 @@ header{
 }
 
 article{
+    padding: 10px 20px 10px;
+    margin: 5px;
+    background-color: burlywood;
+    line-height: 2px;
+    font: 18px Times New Roman, serif;
+}
+
+section{
     padding: 10px 20px 10px;
     margin: 5px;
     background-color: burlywood;
