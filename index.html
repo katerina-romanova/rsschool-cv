@@ -4,81 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>CV Ekaterina Romanova</title>
 </head>
 <body>
     <header>
         <h1>Ekaterina Romanova</h1>
     </header> 
-    <article>
-        <img src="https://i.ibb.co/drT3hrj/My-photo.jpg" alt="My photo" height="220">
-        <h3>Contact:</h3>
-        <ul>
-            <li>+375(44)720-85-20 </li>
-            <li>ro1999ka@gmail.com </li>
-            <li><a href=https://www.linkedin.com/in/katya-romanova-03a2931bb>Linkedin.com</a></li>
-            <li>Minsk, Belarus</li>
-        </ul>
-    </article>
+    <section>
+        <article>
+            <img src="https://i.ibb.co/drT3hrj/My-photo.jpg" alt="My photo" height="220" >
+            <h3>Contact:</h3>
+            <ul>
+                <li>+375(44)720-85-20 </li>
+                <li>ro1999ka@gmail.com </li>
+                <li><a href=https://www.linkedin.com/in/katya-romanova-03a2931bb>Linkedin.com</a></li>
+                <li>Minsk, Belarus</li>
+            </ul>
+        </article>
     
-    <article>
-        <h3>About me:</h3>
-        <p>During my university studies I received an excellent mathematical base, 
-        but because of the outdated views of the teachers I completely lost interest in programming. 
-        I took a large number of courses. I studied Data Engineering, ABAP, IBM Cognos BI, 
-        I liked it, but my dislike of programming from university haunted me. 
-        Now I work as an HR Manager in an IT company. I took the RS School course because 
-        despite my "failures" in the past I have excellent logical thinking, 
-        I really like to solve complex problems and it is difficult for me to live without it.</p>
-    </article>
-    <article>
-        <h3>Skills</h3>
-        <ul>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git, Github</li>
-            <li>OOP</li>
-        </ul>
-    </article>
-    <article>
-        <h3>Languages</h3>
-        <ul>
-            <li>English - B2</li>
-        </ul>
-    </article>
-    <article>
-        <h3>Examples of codes:</h3>
-        <pre><code>
-            function MyFunc() {
-                document.getElementById('loader').style.display='none'
-                document.getElementById('image').style.display='inline-block'            
-            }
-        </code></pre>
-    </article>
-    <article>
-        <h3>Experience:</h3>
-        <h4>Math teacher</h4>
-        <h5>MAXIMUM | Minsk | Feb 2019 - Present</h5>
-        <ul>
-            <li>Preparing and conducting classes for students in grades 7-11;</li>
-            <li>Analyzing the abilities of students and making plans to improve the performance of each student;</li>
-            <li>Conducting educational and sales lectures in schools to attract new students.</li>
-        </ul>
-    </article>
-    <article>
-        <h4>HR Manager</h4>
-        <h5>Sunmait Technologies | Minsk | Nov 2020 - Present</h5>
-        <ul>
-            <li>Searching for candidates through a variety of sources and comprehensive assessment of candidates;</li>
-            <li>Interviewing and selecting candidates;</li>
-            <li>Keeping records and a recruiting database.</li>
-        </ul>
-    </article>
-    <article>
-        <h3>Education:</h3>
-        <h4>Belarusian State University</h4>
-        <h5>Faculty of Applied Mathematics and Computer Science, Actuarial Mathematics | 2017-2021</h5>
-    </article>
+        <article>
+            <h3>About me:</h3>
+            <p>During my university studies I received an excellent mathematical base, 
+            but because of the outdated views of the teachers I completely lost interest in programming. 
+            I took a large number of courses. I studied Data Engineering, ABAP, IBM Cognos BI, 
+            I liked it, but my dislike of programming from university haunted me. 
+            Now I work as an HR Manager in an IT company. I took the RS School course because 
+            despite my "failures" in the past I have excellent logical thinking, 
+            I really like to solve complex problems and it is difficult for me to live without it.</p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Skills</h3>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git, Github</li>
+                <li>OOP</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Languages</h3>
+            <ul>
+                <li>English - B2</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Examples of codes:</h3>
+            <pre>
+                <code>
+                    function MyFunc() {
+                        document.getElementById('loader').style.display='none'
+                        document.getElementById('image').style.display='inline-block'            
+                    }
+                </code>
+            </pre>
+        </article>
+
+        <article>
+            <div>
+                <h3>Experience:</h3>
+                <h4>Math teacher</h4>
+                <h5>MAXIMUM | Minsk | Feb 2019 - Present</h5>
+                <details>
+                    <ul>
+                        <li>Preparing and conducting classes for students in grades 7-11;</li>
+                        <li>Analyzing the abilities of students and making plans to improve the performance of each student;</li>
+                        <li>Conducting educational and sales lectures in schools to attract new students.</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div>
+                <h4>HR Manager</h4>
+                <h5>Sunmait Technologies | Minsk | Nov 2020 - Present</h5>
+                <details>
+                    <ul>
+                        <li>Searching for candidates through a variety of sources and comprehensive assessment of candidates;</li>
+                        <li>Interviewing and selecting candidates;</li>
+                        <li>Keeping records and a recruiting database.</li>
+                    </ul>
+                </details>
+            </div>
+        </article>
+
+        <article>
+            <h3>Education:</h3>
+            <h4>Belarusian State University</h4>
+            <h5>Faculty of Applied Mathematics and Computer Science, Actuarial Mathematics | 2017-2021</h5>
+        </article>
+    </section>
+    
+    <footer>
+        <p><a href="https://github.com/katerina-romanova">My Github account</a></p>
+        <p><a href="https://rs.school/js/">JS Course &middot; The Rolling Scopes School</a></p>
+        <p><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="Logo RS School" width="120"></a></p>
+        <p>2021</p>
+    </footer>
 </body>
 </html>
