@@ -14,10 +14,9 @@
         <nav>
             <p><a class="topLink" href="#about">About Me</a></p>
             <p><a class="topLink" href="#code">Code</a></p>
+            <p><a class="topLink" href="#proj">Projects</a></p>
             <p><a class="topLink" href="#exp">Experience</a></p>
             <p><a class="topLink" href="#edu">Education</a></p>
-            <p><a class="topLink" href="#lang">Languages</a></p>
-            <p><a class="topLink" href="#proj">Projects</a></p>
             <p><a class="topLink" href="#vid">Video CV</a></p>
         </nav>
     </header>
@@ -61,64 +60,79 @@
         </article>
 
         <article>
-            <h2>Examples of codes:</h2>
+            <h2><a id="code"> Examples of codes:</a></h2>
             <pre>
             <code>
-function getMiddle(s)
+<span class="s3">function</span> getMiddle(s)
 {
-    let result = '';
-    if (s.length%2 !== 0){
+    <span class="s3">let</span> result = '';
+    <span class="s3">if</span> (s.length%2 !== 0){
       result +=s[s.length/2- 0.5];
-    } else {
-      result = result + s[s.length/2 - 1] + s[s.length/2];
+    } <span class="s3">else</span> {
+      result = result + s[s.length/2 - 
+      1] + s[s.length/2];
     }
-    return result;
+    <span class="s3">return</span> result;
 };
             </code>
         </pre>
         </article>
 
         <article>
-            <h2>My projects</h2>
+            <h2><a id="proj">My projects</a></h2>
             <h3> CV </h3>
-            <p> I made my CV with HTML and CSS </p>
+            <p> Project about me. I made my CV with HTML and CSS </p>
+            <div class="proj_pic">
+                <a href=https://katerina-romanova.github.io/rsschool-cv target="_blank"><img src="img/My_CV.png"
+                        alt="My CV" height="220"></a>
+            </div>
+
         </article>
 
         <article>
-            <h2>Experience:</h2>
-            
-                <h4>Math teacher</h4>
-                <h5>MAXIMUM | Minsk | Feb 2019 - Present</h5>
-                <details>
-                    <summary>My responsibilities</summary>
-                    <ul>
-                        <li>Preparing and conducting classes for students in grades 7-11;</li>
-                        <li>Analyzing the abilities of students and making plans to improve the performance of each
-                            student;</li>
-                        <li>Conducting educational and sales lectures in schools to attract new students.</li>
-                    </ul>
-                </details>
-            </article>
+            <h2><a id="exp">Experience:</a></h2>
 
-            <article>
-                <h4>HR Manager</h4>
-                <h5>Sunmait Technologies | Minsk | Nov 2020 - Present</h5>
-                <details>
-                    <summary>My responsibilities</summary>
-                    <ul>
-                        <li>Searching for candidates through a variety of sources and comprehensive assessment of
-                            candidates;</li>
-                        <li>Interviewing and selecting candidates;</li>
-                        <li>Keeping records and a recruiting database.</li>
-                    </ul>
-                </details>
-            </article>
-       
+            <h4>Math teacher</h4>
+            <h5>MAXIMUM | Minsk | Feb 2019 - Present</h5>
+            <details>
+                <summary>My responsibilities</summary>
+                <ul>
+                    <li>Preparing and conducting classes for students in grades 7-11;</li>
+                    <li>Analyzing the abilities of students and making plans to improve the performance of each
+                        student;</li>
+                    <li>Conducting educational and sales lectures in schools to attract new students.</li>
+                </ul>
+            </details>
+        </article>
 
         <article>
-            <h2>Education:</h2>
+            <h4>HR Manager</h4>
+            <h5>Sunmait Technologies | Minsk | Nov 2020 - Present</h5>
+            <details>
+                <summary>My responsibilities</summary>
+                <ul>
+                    <li>Searching for candidates through a variety of sources and comprehensive assessment of
+                        candidates;</li>
+                    <li>Interviewing and selecting candidates;</li>
+                    <li>Keeping records and a recruiting database.</li>
+                </ul>
+            </details>
+        </article>
+
+
+        <article>
+            <h2><a id="edu">Education:</a></h2>
             <h4>Belarusian State University</h4>
             <h5>Faculty of Applied Mathematics and Computer Science, Actuarial Mathematics | 2017-2021</h5>
+        </article>
+        <article>
+            <h2><a id="vid">Video CV:</a></h2>
+            <div class="div-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4egR8s6c9ho"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </article>
     </main>
 
