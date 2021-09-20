@@ -1,50 +1,73 @@
-body{
-    background-color:coral;
-    margin:  20px 300px;
-    }
+body {
+    background-color: rgb(255, 255, 255);
+}
 
-header{
+html {
+	scroll-behavior: smooth;
+}
+
+header {
     text-align: center;
     font: bold 24px Futura, sans-serif;
 }
 
+aside {
+    height: 1400px;
+	float: left;
+	width: 30%;
+	background-color: #fdc5ff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    margin-left: 3%;
+}
 
+main {
+    float: right;
+    width: 64%;
+    margin-right: 3%;
+}
 
-section{
+section {
     padding: 10px 20px 10px;
-    margin: 5px;
-    background-color: burlywood;
     line-height: 2px;
     font: 18px Times New Roman, serif;
 }
 
-article{
+article {
     padding: 10px 20px 10px;
-    margin: 5px;
-    background-color: burlywood;
+   
+    background-color: rgb(201, 201, 201);
     line-height: 2px;
     font: 18px Times New Roman, serif;
 }
 
-h3{
+h2 {
     text-align: center;
-    font: bold 20px Futura, sans-serif;
+    font: bold 26px Futura, sans-serif;
+    border:  2px solid purple;
+    border-radius: 10px;
 }
 
-h4{
+h4 {
     line-height: 2px;
     font: bold 18px Futura, sans-serif;
 }
 
-h5{
+h5 {
     line-height: 2px;
     font: bold 16px Futura, sans-serif;
 }
 
-footer{
+footer {
     padding: 10px 20px 10px;
     margin: 5px;
     line-height: 2px;
     font: 18px Times New Roman, serif;
 }
-
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
