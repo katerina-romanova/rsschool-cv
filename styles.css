@@ -13,6 +13,10 @@ html {
     padding: 0; 
 }
 
+button {
+    display: none;
+}
+
 header {
     width: 100%;
     margin: 0;
@@ -21,23 +25,22 @@ header {
 }
 
 aside {
-    height: 2050px;
 	float: left;
 	width: 30%;
 	background-color: #fdc5ff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+    flex-shrink: 0;
 }
 
 main {
     width: 68%;
+    
 }
 
 section {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px 10px;
     margin: 0;
     font: 18px Times New Roman, serif;
 }
@@ -47,6 +50,11 @@ article {
     background-color: rgb(201, 201, 201);
     
     font: 18px Times New Roman, serif;
+}
+
+pre {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
 }
 
 h2 {
@@ -81,6 +89,10 @@ nav {
     align-items: center;
 }
 
+.img-cv {
+    width: 400px;
+}
+
 .proj_pic {
     display: flex;
     justify-content: center;
@@ -94,4 +106,62 @@ nav {
 
 .s3 {
 	color: orangered;
+}
+
+@media screen and (max-width: 575px) {
+	body {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+    .active {
+		display: block;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.9);
+		left: 0;
+		top: 0;
+		width: 40%;
+		
+	}
+
+	.active nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+button {
+    display: block;
+    background-color: #fdc5ff;
+    border: none;
+    margin-top: 30px;
+}
+
+    header {
+        display: none;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+	.img-cv {
+		width: 240px;
+	}
 }

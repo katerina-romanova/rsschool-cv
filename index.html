@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="menuMenu">
+    <header class="menu-main">
         <nav>
             <p><a class="topLink" href="#about">About Me</a></p>
             <p><a class="topLink" href="#code">Code</a></p>
@@ -24,6 +24,11 @@
     <aside>
         <h1>Ekaterina Romanova</h1>
         <img src="https://i.ibb.co/drT3hrj/My-photo.jpg" alt="My photo" height="220">
+        <button class="menu-burger">
+			<img class="menu"
+				src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyIDUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00NjQuODgzIDY0LjI2N2gtNDE3Ljc2NmMtMjUuOTggMC00Ny4xMTcgMjEuMTM2LTQ3LjExNyA0Ny4xNDkgMCAyNS45OCAyMS4xMzcgNDcuMTE3IDQ3LjExNyA0Ny4xMTdoNDE3Ljc2NmMyNS45OCAwIDQ3LjExNy0yMS4xMzcgNDcuMTE3LTQ3LjExNyAwLTI2LjAxMy0yMS4xMzctNDcuMTQ5LTQ3LjExNy00Ny4xNDl6Ii8+PHBhdGggZD0ibTQ2NC44ODMgMjA4Ljg2N2gtNDE3Ljc2NmMtMjUuOTggMC00Ny4xMTcgMjEuMTM2LTQ3LjExNyA0Ny4xNDkgMCAyNS45OCAyMS4xMzcgNDcuMTE3IDQ3LjExNyA0Ny4xMTdoNDE3Ljc2NmMyNS45OCAwIDQ3LjExNy0yMS4xMzcgNDcuMTE3LTQ3LjExNyAwLTI2LjAxMy0yMS4xMzctNDcuMTQ5LTQ3LjExNy00Ny4xNDl6Ii8+PHBhdGggZD0ibTQ2NC44ODMgMzUzLjQ2N2gtNDE3Ljc2NmMtMjUuOTggMC00Ny4xMTcgMjEuMTM3LTQ3LjExNyA0Ny4xNDkgMCAyNS45OCAyMS4xMzcgNDcuMTE3IDQ3LjExNyA0Ny4xMTdoNDE3Ljc2NmMyNS45OCAwIDQ3LjExNy0yMS4xMzcgNDcuMTE3LTQ3LjExNyAwLTI2LjAxMi0yMS4xMzctNDcuMTQ5LTQ3LjExNy00Ny4xNDl6Ii8+PC9zdmc+"
+				alt="menu" width="30" height="27">
+		</button>
         <section>
             <h2>Contact:</h2>
             <ul>
@@ -63,17 +68,16 @@
             <h2><a id="code"> Examples of codes:</a></h2>
             <pre>
             <code>
-<span class="s3">function</span> getMiddle(s)
-{
-    <span class="s3">let</span> result = '';
-    <span class="s3">if</span> (s.length%2 !== 0){
-      result +=s[s.length/2- 0.5];
-    } <span class="s3">else</span> {
-      result = result + s[s.length/2 - 
-      1] + s[s.length/2];
-    }
-    <span class="s3">return</span> result;
-};
+    <span class="s3">function</span> getMiddle(s)
+    {
+        <span class="s3">let</span> result = '';
+        <span class="s3">if</span> (s.length%2 !== 0){
+          result += s[s.length/2 - 0.5];
+        } <span class="s3">else</span> {
+          result = result + s[s.length/2-1] + s[s.length/2];
+        }
+        <span class="s3">return</span> result;
+    };
             </code>
         </pre>
         </article>
@@ -83,8 +87,8 @@
             <h3> CV </h3>
             <p> Project about me. I made my CV with HTML and CSS </p>
             <div class="proj_pic">
-                <a href=https://katerina-romanova.github.io/rsschool-cv target="_blank"><img src="img/My_CV.png"
-                        alt="My CV" height="220"></a>
+                <a href=https://katerina-romanova.github.io/rsschool-cv target="_blank"><img class="img-cv"
+                        src="img/My_CV.png" alt="My CV"></a>
             </div>
 
         </article>
@@ -143,6 +147,12 @@
                     width="120"></a></p>
         <p>2021</p>
     </footer>
+
+    <script>
+        document.querySelector('.menu-burger').addEventListener('click', function () {
+            document.querySelector('.menu-main').classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>
